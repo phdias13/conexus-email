@@ -49,7 +49,12 @@
     [data-ogsc] .brand-footer-muted, [data-ogsb] .brand-footer-muted { color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; }
     [data-ogsc] .brand-footer-sep, [data-ogsb] .brand-footer-sep { color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; }
     [data-ogsc] .brand-footer-lime, [data-ogsb] .brand-footer-lime { background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important; }
-  </style>
+  
+/* Fixed brand hero across light and dark modes. */
+.brand-hero{background-color:#32104C !important;background-image:linear-gradient(#32104C,#32104C) !important;}
+@media (prefers-color-scheme:dark){.brand-hero{background-color:#32104C !important;background-image:linear-gradient(#32104C,#32104C) !important;}}
+[data-ogsc] .brand-hero,[data-ogsb] .brand-hero{background-color:#32104C !important;background-image:linear-gradient(#32104C,#32104C) !important;}
+</style>
 </head>
 
 <body style="margin:0; padding:0; background-color:#EEF0F4; font-family:Arial, Helvetica, sans-serif;">
@@ -84,7 +89,7 @@
 
           <!-- HERO -->
           <tr>
-            <td bgcolor="#32104C" style="background-color:#32104C; padding:0;">
+            <td class="brand-hero" bgcolor="#32104C" style="background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; padding:0;">
 
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
@@ -315,87 +320,6 @@
               </table>
             </td>
           </tr>
-
-          <!-- BRANDED FOOTER BAND -->
-          <tr>
-            <td class="brand-footer" bgcolor="#32104C" style="background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; padding:0;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td class="gutter brand-footer" style="background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; padding:22px 28px;">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                      <tr>
-                        <td class="stack" valign="middle" style="width:36%;">
-                          <div class="brand-footer-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.9; letter-spacing:4px; text-transform:uppercase; color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important;">
-                            Inovação<br>
-                            que impulsiona<br>
-                            pessoas
-                          </div>
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px;"><tr><td width="62" height="5" bgcolor="#D8EC35" class="brand-footer-lime" style="width:62px; height:5px; line-height:5px; font-size:1px; background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important;">&nbsp;</td></tr></table>
-                        </td>
-
-                        <td class="stack foot-logos" valign="middle" style="width:64%; text-align:right;">
-                          <table role="presentation" align="right" cellspacing="0" cellpadding="0" border="0">
-                            <tr>
-                              <td align="right">
-                                <img
-                                  src="https://phdias13.github.io/conexus-email/img/conexus-negativa.png"
-                                  alt="Conexus"
-                                  width="220"
-                                  style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; width:220px; max-width:100%; height:auto; border:0;"
-                                >
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="right" style="padding-top:14px;">
-                                <table class="devby" role="presentation" align="right" cellspacing="0" cellpadding="0" border="0">
-                                  <tr>
-                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:2px; color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; text-transform:uppercase; padding-right:8px;">
-                                      Developed by
-                                    </td>
-
-                                    <td class="sep brand-footer-sep" style="padding:0 8px; color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; font-size:16px; line-height:16px;">|</td>
-                                    <td style="padding-right:8px;">
-                                      <img
-                                        src="https://phdias13.github.io/conexus-email/img/lacerdanexus-negativa.png"
-                                        alt="Lacerda Nexus"
-                                        height="16"
-                                        style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; height:16px; width:auto; border:0;"
-                                      >
-                                    </td>
-
-                                    <td class="sep brand-footer-sep" style="padding:0 8px; color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; font-size:16px; line-height:16px;">|</td>
-                                    <td style="padding-right:8px;">
-                                      <img
-                                        src="https://phdias13.github.io/conexus-email/img/lacerda-negativa.png"
-                                        alt="Lacerda Diniz Machado"
-                                        height="18"
-                                        style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; height:18px; width:auto; border:0;"
-                                      >
-                                    </td>
-
-                                    <td class="sep brand-footer-sep" style="padding:0 8px; color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; font-size:16px; line-height:16px;">|</td>
-                                    <td>
-                                      <img
-                                        src="https://phdias13.github.io/conexus-email/img/estrategias-negativa.png"
-                                        alt="Lacerda Diniz Machado Estratégias Tributárias"
-                                        height="24"
-                                        style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; height:24px; width:auto; border:0;"
-                                      >
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
           <!-- LEGAL FOOTER -->
           <tr>
             <td style="padding:0 28px 0 28px; background-color:#FFFFFF;">
