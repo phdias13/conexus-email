@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <title>Conexus | Lacerda Diniz</title>
   <style>
     @media only screen and (max-width:620px) {
@@ -24,7 +26,29 @@
       .callout-txt { display:block !important; padding:12px 18px 22px 18px !important; }
       .foot-logos { padding-top:24px !important; }
       .top td { display:block !important; text-align:left !important; }
+      .brand-footer .devby td { padding-left:0 !important; padding-right:4px !important; letter-spacing:1px !important; font-size:9px !important; }
+      .brand-footer .devby td.sep { padding-left:0 !important; padding-right:4px !important; }
+      .brand-footer .devby img { height:10px !important; }
     }
+
+    /* Branded footer: preserve canonical colors in dark-mode clients. */
+    .brand-footer, .brand-footer td { background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; }
+    .brand-footer-copy { color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; }
+    .brand-footer-muted { color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; }
+    .brand-footer-sep { color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; }
+    .brand-footer-lime { background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important; }
+    @media (prefers-color-scheme: dark) {
+      .brand-footer, .brand-footer td { background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; }
+      .brand-footer-copy { color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; }
+      .brand-footer-muted { color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; }
+      .brand-footer-sep { color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; }
+      .brand-footer-lime { background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important; }
+    }
+    [data-ogsc] .brand-footer, [data-ogsb] .brand-footer, [data-ogsc] .brand-footer td, [data-ogsb] .brand-footer td { background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; }
+    [data-ogsc] .brand-footer-copy, [data-ogsb] .brand-footer-copy { color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; }
+    [data-ogsc] .brand-footer-muted, [data-ogsb] .brand-footer-muted { color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; }
+    [data-ogsc] .brand-footer-sep, [data-ogsb] .brand-footer-sep { color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; }
+    [data-ogsc] .brand-footer-lime, [data-ogsb] .brand-footer-lime { background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important; }
   </style>
 </head>
 
@@ -294,19 +318,19 @@
 
           <!-- BRANDED FOOTER BAND -->
           <tr>
-            <td bgcolor="#32104C" style="background-color:#32104C; padding:0;">
+            <td class="brand-footer" bgcolor="#32104C" style="background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; padding:0;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                  <td class="gutter" style="padding:22px 28px;">
+                  <td class="gutter brand-footer" style="background-color:#32104C !important; background-image:linear-gradient(#32104C,#32104C) !important; padding:22px 28px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                       <tr>
                         <td class="stack" valign="middle" style="width:36%;">
-                          <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.9; letter-spacing:4px; text-transform:uppercase; color:#FFFFFF;">
+                          <div class="brand-footer-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.9; letter-spacing:4px; text-transform:uppercase; color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important;">
                             Inovação<br>
                             que impulsiona<br>
                             pessoas
                           </div>
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px;"><tr><td width="62" height="5" bgcolor="#D8EC35" style="width:62px; height:5px; line-height:5px; font-size:1px; background-color:#D8EC35;">&nbsp;</td></tr></table>
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px;"><tr><td width="62" height="5" bgcolor="#D8EC35" class="brand-footer-lime" style="width:62px; height:5px; line-height:5px; font-size:1px; background-color:#D8EC35 !important; background-image:linear-gradient(#D8EC35,#D8EC35) !important;">&nbsp;</td></tr></table>
                         </td>
 
                         <td class="stack foot-logos" valign="middle" style="width:64%; text-align:right;">
@@ -325,11 +349,11 @@
                               <td align="right" style="padding-top:14px;">
                                 <table class="devby" role="presentation" align="right" cellspacing="0" cellpadding="0" border="0">
                                   <tr>
-                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:2px; color:#D5D0DF; text-transform:uppercase; padding-right:8px;">
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:2px; color:#D5D0DF !important; -webkit-text-fill-color:#D5D0DF !important; text-transform:uppercase; padding-right:8px;">
                                       Developed by
                                     </td>
 
-                                    <td class="sep" style="padding:0 8px; color:#8B809E; font-size:16px; line-height:16px;">|</td>
+                                    <td class="sep" style="class="sep brand-footer-sep" style="padding:0 8px; color:#8B809E !important; -webkit-text-fill-color:#8B809E !important; font-size:16px; line-height:16px;">|</td>
                                     <td style="padding-right:8px;">
                                       <img
                                         src="https://phdias13.github.io/conexus-email/img/lacerdanexus-negativa.png"
